@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <title>Pathfinding Algorithms</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center text-center m-1">
+            <div class="row">
+                <div class="col-4">
+                    <label for="algorithms">Algorithms: </label>
+                    <select name="algorithms" id="algorithm-list">
+                        <option value="A*">A*</option>
+                        <option value="Dijkstra">Dijkstra's</option>
+                        <option value="Breadth First Search">Breadth First Search</option>
+                        <option value="Depth First Search">Depth First Search</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button type="button" id="start" class="btn btn-secondary">Start</button>
+                </div>
+                <div class="col-2">
+                    <button type="button" id="clear" class="btn btn-secondary">Clear</button>
+                </div>
+                <div class="col-4">
+                    <label for="chosen-square">Type of square to place:</label>
+                    <select name="chosen-square" id="chosen-square">
+                        <option value="start">Start</option>
+                        <option value="end">End</option>
+                        <option value="wall">Wall</option>
+                        <option value="empty">Empty</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+    
+
+    <script src="sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
